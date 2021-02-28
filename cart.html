@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link href="./css/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Cart</title>
+</head>
+<!-- custom css here as setting background on index.css is not desired effect -->
+<body style="background: #fff">
+    <a href="index.html" style="padding:10px">index</a>
+    <div class="cart">
+        <div class="cart-list">
+            <ul class="cart-list-container">
+                <li>
+                    <h3>Your Cart</h3>
+                    <div>Price</div>
+                </li>
+
+                <li>
+                    <div class="cart-image border-custom">
+                      <img src="./assets/def.GIF" alt="alt" />
+                    </div>
+                    <div class="cart-name">
+                      <div>
+                        name
+                      </div>
+                      <div>
+                        Qty:
+                        <select class="qty-select">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                        <button type="button" class="" onclick="func()" title="Remove this item from cart">
+                            <i class="fa fa-trash fa-1g" aria-hidden="true"></i></button>
+                      </div>
+                    </div>
+                    <div class="cart-price">
+                      1.00                
+                    </div>
+                  </li>
+                </ul>
+            </div>
+        </div>
+
+</body>
+<script>
+    function func() {
+        alert("Hello");
+    }
+</script>
+</html>

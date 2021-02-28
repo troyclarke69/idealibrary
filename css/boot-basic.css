@@ -1,0 +1,129 @@
+:root{
+    height: 100%;
+    --white: #ffffff;
+    --black: #000000;
+    --lightgrey: #f8f8f8;
+    --medgrey: #d4d4d4;
+    --darkgrey: #a1a1a1;
+    --charcoal: #414141;
+    --nice-color-1: rgba(165,42,42, 1);
+    --nice-color-2: #a2b9bc;
+    --nice-color-3: #b2ad7f;
+    --nice-color-4: #878f99;
+    --nice-color-5: #203040;
+    --nice-color-6: rgba(136, 57, 57, 1);
+    --nice-color-7: #683aa4;
+}
+/* * {
+    background-color: var(--nice-color-5);
+} */
+html{
+    font-size: 62.5%; /* 16px * 62.5 = 10px = 1rem */
+    box-sizing: border-box;   
+}
+
+body {
+    font: 1rem Gotu, Roboto, Helvetica, courier;
+    display: block;
+    overflow-x: hidden;
+    background-color: var(--nice-color-5);
+    color: var(--white);
+}
+nav {
+    background-color: white;
+}
+.navbar-brand img {
+    max-height: 50px;
+}
+.navbar-brand {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--nice-color-1);
+}
+nav ul li a {
+    color: #a9a9a9;
+    font-size: 22px;
+    margin: auto 10px;
+}
+nav ul li a:hover {
+    color: #683aa4;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+section h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    color:var(--nice-color-4);
+    text-align: left;
+    margin-bottom: 20px;
+}
+section p {
+    -size: 16px;
+    font-weight: 300;
+}
+button {
+    max-width: 50%;
+    border-radius: 50px !important;
+}
+#hero .col {
+    justify-content: center; 
+    flex-direction: column;
+    display: flex;
+}
+#hero .img-col {
+    justify-content: flex-end; 
+    margin-top: 5rem;
+    margin-bottom: 3.5rem;
+}
+#hero img {
+    max-width: 80% !important;
+    width: 80%;
+}
+#hero .card-body {
+    color: var(--black);
+}
+#projects .card-text {
+    color: var(--black);
+}
+#hero .card {
+    /* box-shadow: 11px 7px 16px #f9f9f9; */
+    box-shadow: 6px 6px 6px #d9d9d9;
+    border: 0;
+    text-align: center;
+}
+#hero .icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#services .services {
+    margin-bottom: 50px;
+}
+
+#services .card-img-top {
+    width: 40%;
+    height: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+}
+
+#contact {
+    text-align: center;
+    background-color: var(--nice-color-4);
+    color: white;
+}
+#contact h1 {
+    text-align: center;
+    color: white;
+}
+
+.icon-text {
+    font-size: 2rem;
+}

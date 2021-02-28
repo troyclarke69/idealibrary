@@ -1,0 +1,38 @@
+* {
+    background: #fff;
+}
+.country-flags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.country-flags li {
+    list-style-type: none;
+    padding: 0;
+    flex: 0 1 2rem;
+    margin: .1rem;
+    height: 3.2rem;
+}
+.country-flag{
+    display: flex;
+    flex-direction: column;
+    /* All 3 below the same: */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    /* opacity: .65; */
+}
+/* #flags
+{
+    transition:all 3s ease;
+    opacity: .5;
+} */
+.country-flag:hover
+{
+    opacity:1;
+    transform: scale(1.25);
+}
+  /* img {
+    transition: width 2s, height 4s;
+  } */

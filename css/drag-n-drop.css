@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+}
+
+.container {
+    background-color: #333;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.draggable {
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid black;
+    cursor: move;
+}
+
+.draggable.dragging {
+    opacity: .5;
+}
+
+/*  */
+.left {
+    /* *** use position/left OR float *** */
+    /* position: absolute; */
+    /* left: 0px; */
+    float: left;
+    width: 45%;
+    border: 3px solid blue;
+    padding: 10px;
+  }
+
+.right {
+    /* *** use position/right OR float *** */
+    /* position: absolute; */
+    /* right: 0px; */
+    float: right;
+    width: 45%;
+    border: 3px solid blue;
+    padding: 10px;
+  }
+
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+.yellow {
+    background-color: yellow;
+}
+.green {
+    background-color: green;
+}

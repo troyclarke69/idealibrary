@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex with oneDrive pix</title>
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+    .onedrive-container {
+        margin: 2rem;
+    }
+
+    .img-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .img-wrapper li {
+        list-style-type: none;
+        padding: 0;
+        /* flex: 1 1 1rem; */
+        margin: .25rem;
+        /* height: 3.2rem; */
+    }
+    .img-item { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .img-item img {
+        width: 500px;
+        height: 500px;
+        border: 10px solid #444aaa;
+        border-radius: 40%;
+    }
+
+</style>
+<body>
+    <div class="onedrive-container">
+        <ul class="img-wrapper">
+            <li class="img-item">
+                <img src="https://bl3301files.storage.live.com/y4mTZagS9S--Xx-pH9W-zqerkyI6nHhpGPzDxGk4Wg4KLOMzojSFp1lGD3_y-GO2wQ6_BZF4TbwJuVvzcSUz2aAdvq20hjFQv3kxvjbyWFIwyG8ehJYT00JyXnmVZPslON-RcDPsa-Se0Dfx-FF3R8t69DlvLQCQk4FUSpVrVoGv3TZkTRqTdKS74QE0jNpj8N4?width=1080&height=1080&cropmode=none" />
+            </li>
+            <li class="img-item">
+                <img src="https://bl3301files.storage.live.com/y4mnlc4INrLwC4EG5hJouMcYPEd_wRki9CHNJ7otHNIkdGlHd8m11mVirtXqWqPysg5AK7PBEVY8Faif38mF41JVOFRG3ERZ5ALuyJjOssxJrUJT3wh__HZ6wqBZIRfLtdfjXewC-eHtTOw5tEbC5fcg70EbZTHK5Seh_U2mM1PYCRzEyGUkQlP_tLGHzjwCovo?width=3456&height=4608&cropmode=none" />
+            </li>
+            <li class="img-item">
+                <img src="https://bl3301files.storage.live.com/y4m-TxOPJcnFUVULQL9CoxbgK6oUVv9DcbWC93R3_uAMqT_cQOAyAtYAwocHGIIp5GGQIAz-VPcrFJ9dCXwCy085__19khkhF6rXqHxV_DcVZhKDkaUHI6gC82mDejWrTCb48_P2OXWMOCEvSX5neIXokeWy90Bem1ZJnlw5Iyrj4FS0I_phq-WbE_e-xAbgdOO?width=1080&height=1080&cropmode=none" />
+            </li>
+            <li class="img-item">
+                <img src="https://bl3301files.storage.live.com/y4moJkjm5Q94llil8ShUWDGc1HPVjtmsLOmyLD5cFzWlXnC2tF66m48jpiln3kF6cCr5HMpgBDBsQvcaqo5lcJQsBPRRv_UXaY6zw33teK8g4Exnhiv02of7II2nDhSXhs3DGDs3uyeo52GuWJFtArBIPLKh6b5tYwF3wbLpwC9SzlEfecmzGbv1fuFDOYF8Xr3?width=1080&height=1080&cropmode=none" />
+            </li>
+            <li class="img-item">
+                <img src="https://bl3301files.storage.live.com/y4mF3ADepDnwOCw6BnN_OErlgZLCK4KqhJoxfYeW-P7vjlvhvNb2bSBM3JgAzC7Rh_ZZdfQ31eQFVKo7_FMzEo066LSAzXvUf8xvASBlvFVhyJCkonuCyJTG9-jm64NojqeL-velZh8Cj7CXKKMKu7QjldmPrcI6-b3vEtTFODLOriOJ61fgkfzZgdzLgmc27Kx?width=1080&height=1080&cropmode=none" />
+            </li>
+            <li class="img-item">
+                <img src="https://bl3301files.storage.live.com/y4m-kAnPCdMG-_gLzh5kg29lJ9_L6iOeNvh_8gdD462t5yenwwDEC2wArAVuLGEAQvywvy4r5VfHTHMjQZ-FhddO-y7Zvx7TU_1liu9-dGUBCN1v5P5E76DW3gyR5RgoeVjw9ICCV5rMlSIrvMPNd-gcG71XBOIukn84NbbeSaE_58-VHvJ_IU4C4HqUDi-pxoz?width=1080&height=1080&cropmode=none" />
+            </li>
+            <li class="img-item">
+                <img src="https://bl3301files.storage.live.com/y4meLKSMIysv-USe7n-yPGUvT2qHbVMl28W0wV6fmKMjm7AOHZLBLtr3-kqd_e0-FrMlqEu6hJ-56PAsXKxz-mHr1fLRL4ODOps4tZbqruD0zQtk1WVI-r0B2Lc2T83a504QxB4jbECG9GPf2gXQURdHkiTIkcMX9TwB7sBxowBrFEaJH2DYoxSwbGqfnRP8fwy?width=1080&height=1080&cropmode=none" />
+            </li>
+            <li class="img-item">
+                <img src="https://bl3301files.storage.live.com/y4mnD6uScBKxzAPlhx0FGwdOExknzGe4tAzqZxmMZllE1bLOCjeLxLI8JbOa3jfOJ8WSL6x4pcIuQEXnRfU5XrOzbuDDQ-xCrxmSg9ene6DktvJD9k7nP0uDBx-nLLW2kE0O2_fqrXNyRmANwbj31aNpc1mRBCdDI8-F20BOUh69CBeO-W465tdN59uI4rNnNbN?width=1080&height=1080&cropmode=none" />
+            </li>
+            <li class="img-item">
+                <img src="https://bl3301files.storage.live.com/y4mN7nLA5hcMGftdpiFupBKys5SFVUgnSkMOxvoUMn35OsUK_V-oKoMx2cP15A5oCrrAz8Q2KY_jxBdPW6l1Og1xRG5CxQLaTlJJE_e78x-C-BYZWudXuvKmm40WIP1qd9tMPo2sCInSEeC6bBtzQX9ejfJgdugh7OyXQQD3YvOVHEKn0KD0Wa5c7J1E7f4kcLN?width=1080&height=1080&cropmode=none" />
+            </li>
+            <li class="img-item">
+                <img src="https://bl3301files.storage.live.com/y4mr78THnFgWOKSE8nINYiVuQJYu8uXjefPDf5iWDVuJ6t_a0TDETSJxmbczgbkQxJqrbcmp5Y_1fxbNpgs-awo7-WlW3HxTs0pZfd-8SDkM9BlNKdDjwYm-CeMhbsp8Ad5XiV1RuaOSxKugN5zX_XPQt3EqoiTqJQnd2mKs-igKBBSSZlNvS0L9ozEtacrD9Xw?width=1080&height=1080&cropmode=none" />
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

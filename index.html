@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link href="./css/index.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="./js/index.js" defer></script>
+
+    <title>Cool Stuff</title>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="header">
+           
+            <div class="brand">
+                <button onclick="openMenu()">&#9776;</button>
+                <a href="#">idealibrary</a>
+              </div>
+
+              <!-- <div class="header-links">
+                  <a href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-sign-in fa-2x" aria-hidden="true"></i></a>
+                  <div class="dropdown">
+                    <a href="#" title="Admin"><i class="fa fa-unlock fa-2x" aria-hidden="true"></i></a>
+                    <ul class="dropdown-content">
+                      <li><a href="boot-basic.html">Boot</a></li>
+                    </ul>
+                  </div>
+              </div> -->
+              
+        </div>
+        <aside class="sidebar">
+            <h3>Sidebar</h3>
+            <button class="sidebar-close-button" onclick="closeMenu()">
+              <i class="fa fa-arrow-left fa-1g" aria-hidden="true"></i>
+            </button>
+            <ul class="categories">
+                <h4>Links</h4>
+                <ul>
+                  <li><a href="flags.html">Flags</a></li>
+                  <li><a href="clock.html">Clock</a></li>
+                  <li><a href="drag-n-drop.html">DragNDrop</a></li>
+                  <li><a href="calculator.html">Calculator</a></li>
+                  <li><a href="text2speech.html">Text2Speech</a></li>
+                  <li><a href="tictactoe.html">TicTacToe</a></li>
+                  <li><a href="gsap.html">GSAP</a></li>
+                  <li><a href="emoji.html">Emoji</a></li>
+                  <li><a href="quiz.html">Quiz</a></li>
+                  <li><a href="anim-onload.html">OnLoad</a></li>
+                </ul>
+            </ul>
+        </aside>
+        <main class="main">
+            <div class="grid">
+                <div class="module">
+                    <a class="tiptext" href="anim-onload.html" target="_blank"
+                        title="Animated page load">OnLoad
+                        <iframe class="description" src="anim-onload.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <a class="tiptext" href="boot-basic.html" target="_blank"
+                        title="A bootstrap example">Boot
+                        <iframe class="description" src="boot-basic.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <a class="tiptext" href="sandbox.html" target="_blank"
+                        title="">Sandbox
+                        <iframe class="description" src="sandbox.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <a class="tiptext" href="band-index.html" target="_blank"
+                        title="">Band
+                        <iframe class="description" src="band-index.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <a class="tiptext" href="boot-nav.html" target="_blank"
+                        title="Bootstrap Navigation example">BootNav
+                        <iframe class="description" src="boot-nav.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <a class="tiptext" href="eyes.html" target="_blank"
+                        title="Control mouse movement with webgazer">Eyes
+                        <!-- <iframe class="description" src="eyes.html"></iframe> -->
+                    </a>
+                </div>
+                <div class="module">
+                    <a class="tiptext" href="flags.html" target="_blank"
+                        title="flex grid wrap example with XMLHttpRequest">Flags
+                        <iframe class="description" src="flags.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <a class="tiptext" href="clock.html" target="_blank"
+                        title="">Clock
+                        <iframe class="description" src="clock.html"></iframe>
+                    </a>
+                </div>
+                <!-- 8 -->
+                <div class="module">
+                    <a class="tiptext" href="smooth-clock.html" target="_blank"
+                        title="">Smooth Clock
+                        <iframe class="description" src="smooth-clock.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <a class="tiptext" href="cart.html" target="_blank"
+                        title="Shopping Cart example">Cart
+                        <iframe class="description" src="cart.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <a class="tiptext" href="2-column.html" target="_blank"
+                        title="CSS grid 2 column example">2-Col
+                        <iframe class="description" src="2-column.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <a class="tiptext" href="3-column.html" target="_blank"
+                        title="CSS grid 3 column example">3-Col
+                        <iframe class="description" src="3-column.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <a class="tiptext" href="even-dist.html" target="_blank"
+                        title="CSS grid wrap example with SVGs">Wrap
+                        <iframe class="description" src="even-dist.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <a class="tiptext" href="breakout-article.html" target="_blank"
+                        title="">Article
+                        <iframe class="description" src="breakout-article.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <a class="tiptext" href="calendar.html" target="_blank"
+                        title="">Calendar
+                        <iframe class="description" src="calendar.html"></iframe>
+                    </a>
+                </div>
+
+                <!-- 16 -->
+                <div class="module">
+                    <a class="tiptext" href="monopoly.html" target="_blank"
+                        title="">Monopoly
+                        <iframe class="description" src="monopoly.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <!-- <a href="drag-n-drop.html" target="_blank">DragNDrop</a> -->
+                    <a class="tiptext" href="drag-n-drop.html" target="_blank"
+                        title="">DragNDrop
+                        <iframe class="description" src="drag-n-drop.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <!-- <a href="calculator.html" target="_blank">Calculator</a> -->
+                    <a class="tiptext" href="calculator.html" target="_blank"
+                        title="">Calculator
+                        <iframe class="description" src="calculator.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <!-- <a href="text2speech.html" target="_blank">Text2Speech</a> -->
+                    <a class="tiptext" href="text2speech.html" target="_blank"
+                        title="">Text2Speech
+                        <iframe class="description" src="text2speech.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <!-- <a href="tictactoe.html" target="_blank">TicTacToe</a> -->
+                    <a class="tiptext" href="tictactoe.html" target="_blank"
+                        title="">TicTacToe
+                        <iframe class="description" src="tictactoe.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <!-- <a href="gsap.html" target="_blank">GSAP</a> -->
+                    <a class="tiptext" href="gsap.html" target="_blank"
+                        title="">GSAP
+                        <iframe class="description" src="gsap.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <!-- <a href="emoji.html" target="_blank">Emoji</a> -->
+                    <a class="tiptext" href="emoji.html" target="_blank"
+                        title="">Emoji
+                        <iframe class="description" src="emoji.html"></iframe>
+                    </a>
+                </div>
+
+                <div class="module">
+                    <!-- <a href="quiz.html" target="_blank">Quiz</a> -->
+                    <a class="tiptext" href="quiz.html" target="_blank"
+                        title="">Quiz
+                        <iframe class="description" src="quiz.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <!-- <a href="anim.html" target="_blank">Splash</a> -->
+                    <a class="tiptext" href="anim.html" target="_blank"
+                        title="">Splash
+                        <iframe class="description" src="anim.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <!-- <a href="box-model.html" target="_blank">Box Model</a> -->
+                    <a class="tiptext" href="box-model.html" target="_blank"
+                        title="">Box Model
+                        <iframe class="description" src="box-model.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <!-- <a href="cake.html" target="_blank">Cake</a> -->
+                    <a class="tiptext" href="cake.html" target="_blank"
+                        title="">Cake
+                        <iframe class="description" src="cake.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <!-- <a href="gradient.html" target="_blank">Gradient</a> -->
+                    <a class="tiptext" href="gradient.html" target="_blank"
+                        title="Animated text gradient">Gradient
+                        <iframe class="description" src="gradient.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <!-- <a href="heart.html" target="_blank">Heart</a> -->
+                    <a class="tiptext" href="heart.html" target="_blank"
+                        title="Animated box with circles">Heart
+                        <iframe class="description" src="heart.html"></iframe>
+                    </a>
+                </div>
+                <!-- 29 -->
+
+                <div class="module">
+                    <!-- <a href="infographic.html" target="_blank">Infographic</a> -->
+                    <a class="tiptext" href="infographic.html" target="_blank"
+                        title="Animated box with circles">Infographic
+                        <iframe class="description" src="infographic.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <!-- <a href="mail-sent.html" target="_blank">Mail</a> -->
+                    <a class="tiptext" href="mail-sent.html" target="_blank"
+                        title="Animated mail send">Mail
+                        <iframe class="description" src="mail-sent.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <!-- <a href="mixormatch.html" target="_blank">Match Game</a> -->
+                    <a class="tiptext" href="mixormatch.html" target="_blank"
+                        title="Animated mail send">Match Game
+                        <iframe class="description" src="mixormatch.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <!-- <a href="mixormatch.html" target="_blank">Match Game</a> -->
+                    <a class="tiptext" href="sidebar.html" target="_blank"
+                        title="">Sidebar
+                        <iframe class="description" src="sidebar.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <a class="tiptext" href="hover.html" target="_blank"
+                        title="">Hover
+                        <iframe class="description" src="hover.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <a class="tiptext" href="trello-grid.html" target="_blank"
+                        title="">Trello Grid
+                        <iframe class="description" src="trello-grid.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <a class="tiptext" href="hero-with-articles-grid.html" target="_blank"
+                        title="">Hero Grid
+                        <iframe class="description" src="hero-with-articles-grid.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <a class="tiptext" href="threejstwo.html" target="_blank"
+                        title="">ThreeJs
+                        <iframe class="description" src="threejstwo.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <a class="tiptext" href="simple-grid.html" target="_blank"
+                        title="">Simple Grid
+                        <iframe class="description" src="simple-grid.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <a class="tiptext" href="nested-grid.html" target="_blank"
+                        title="">Nested Grid
+                        <iframe class="description" src="nested-grid.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <a class="tiptext" href="responsive-grid.html" target="_blank"
+                        title="">Responsive Grid
+                        <iframe class="description" src="responsive-grid.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <a class="tiptext" href="gridVflex.html" target="_blank"
+                        title="">GridvFlex
+                        <iframe class="description" src="gridVflex.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <a class="tiptext" href="12-col-grid-vert.html" target="_blank"
+                        title="">12 Col Vert
+                        <iframe class="description" src="12-col-grid-vert.html"></iframe>
+                    </a>
+                </div>
+                <div class="module">
+                    <a class="tiptext" href="onedrive.html" target="_blank"
+                        title="">OneDrive
+                        <iframe class="description" src="onedrive.html"></iframe>
+                    </a>
+                </div>
+             
+               
+              </div>
+        </main>
+        <div class="footer">
+            <div><h6>&copy; 2021 &nbsp;</h6></div>
+            <br />
+            <span>Everyone's rights are reserved.</span>
+        </div>
+    </div>
+
+</body>
+<script>
+    function openMenu() {
+        document.querySelector(".sidebar").classList.add("open")
+    }
+    function closeMenu() {
+        document.querySelector(".sidebar").classList.remove("open")
+    }
+    function func() {
+        alert('I am clicked')
+    }
+
+</script>
+</html>

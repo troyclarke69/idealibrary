@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <!-- <link href="styles.css" rel="stylesheet">
+    <script defer src="clock.js"></script> -->
+    <title>Clock</title>
+</head>
+<style>
+    *, *::after, *::before{
+        box-sizing: border-box;
+        font-family: 'Courier New', Arial, sans-serif;
+    }
+
+    body{
+        /* background: linear-gradient(to right, hsl(200, 89%, 21%),
+        hsl(175, 76%, 23%)); */
+        background-color: black;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        min-height: 100vh;
+        overflow:hidden;
+    }
+
+    .clock{
+        width:300px;
+        height:300px;
+        /* background-color: rgba(255,255,255,.8); */
+        background: linear-gradient(to right, hsl(200, 89%, 21%),
+        hsl(175, 76%, 23%));
+        /* make circle */
+        border-radius: 1%;
+        border: 2px solid #d4d4d4;
+        position: relative;
+    }
+
+    .clock .number {
+        /* set variable for rotation of numbers */
+        --rotation:0;
+        /* take note that above clock position is set to relative */
+        position: absolute;
+        width: 100%;
+        height:100%;    
+        text-align: center;
+        /* sets all numbers around circle */
+        transform: rotate(var(--rotation));
+        font-size:1.5rem;
+        font-weight: bold;
+        color: #d8d8d8;
+        padding: 1rem;
+    }
+
+    .clock .number1 { --rotation: 30deg; }
+    .clock .number2 { --rotation: 60deg; }
+    .clock .number3 { --rotation: 90deg; }
+    .clock .number4 { --rotation: 120deg; }
+    .clock .number5 { --rotation: 150deg; }
+    .clock .number6 { --rotation: 180deg; }
+    .clock .number7 { --rotation: 210deg; }
+    .clock .number8 { --rotation: 240deg; }
+    .clock .number9 { --rotation: 270deg; }
+    .clock .number10 { --rotation: 300deg; }
+    .clock .number11 { --rotation: 330deg; }
+
+    .flipNumber { transform: rotate(180deg);}
+
+    .clock .hand {
+        --rotation:0;
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        border: 1px solid white;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        z-index:10;
+        transform-origin: bottom;
+        /* moves the hand over to exactly center */
+        transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+        
+    }
+
+    /* draw center circle with pyseudo element */
+    .clock:after{
+        content:'';
+        position: absolute;
+        background-color: black;
+        z-index: 11;
+        width:15px;
+        height:15px;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        border-radius:50%;
+
+    }
+
+    .clock .hand.second {
+        width:2px;
+        height:42%;
+        background-color: red;
+    }
+
+    .clock .hand.minute {
+        width:5px;
+        height:38%;
+        background-color: gold;
+    }
+
+    .clock .hand.hour {
+        width:5px;
+        height:30%;
+        background-color: gold;
+    }
+    
+</style>
+<body>
+    <div class="clock">
+        <div class="hand hour" data-hour-hand></div>
+        <div class="hand minute" data-minute-hand></div>
+        <div class="hand second" data-second-hand></div>
+        <!-- Emmet tip: div.number.number$*12{$}*12 -->
+        <div class="number number1">1</div>
+        <div class="number number2">2</div>
+        <div class="number number3">3</div>
+        <div class="number number4">
+            <div class="flipNumber">4</div> 
+        </div>
+        <div class="number number5 flipNumber">
+            <div class="flipNumber">5</div> 
+        </div>
+        <div class="number number6 flipNumber">
+            <div class="flipNumber">6</div> 
+        </div>
+        <div class="number number7 flipNumber">
+            <div class="flipNumber">7</div> 
+        </div>
+        <div class="number number8 flipNumber">
+            <div class="flipNumber">8</div> 
+        </div>
+        <div class="number number9">9</div>
+        <div class="number number10">10</div>
+        <div class="number number11">11</div>
+        <div class="number number12">12</div>
+    </div>
+    <script>
+        setInterval(setClock, 1000)
+
+        const hourHand = document.querySelector('[data-hour-hand]')
+        const minuteHand = document.querySelector('[data-minute-hand]')
+        const secondHand = document.querySelector('[data-second-hand]')
+
+        function setClock() {
+            const currentDate = new Date()
+            const secondsRatio = currentDate.getSeconds() / 60
+            const minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60
+            const hoursRatio = (minutesRatio + currentDate.getHours()) / 12
+            setRotation(secondHand, secondsRatio)
+            setRotation(minuteHand, minutesRatio)
+            setRotation(hourHand, hoursRatio)
+        }
+
+        function setRotation(element, rotationRatio) {
+            element.style.setProperty('--rotation', rotationRatio * 360)
+        }
+        setClock()
+
+    </script>
+</body>
+</html>

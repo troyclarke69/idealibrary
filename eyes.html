@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://webgazer.cs.brown.edu/webgazer.js?" defer></script>
+  <script src="./js/eyes.js" defer></script>
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* .images {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+    } */
+
+    img {
+      width: 50vw;
+      height: 100vh;
+      transition: transform 200ms;
+      object-fit: cover;
+    }
+
+    img.left {
+      transform: translateX(-100vw);
+    }
+
+    img.right {
+      transform: translateX(100vw);
+    }
+
+    img.next {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- <div style="padding:10px; float:inline-start">
+    <a href="index.html">index</a>
+    <h4>Turn your webcam on and look to the left or right of the image to swipe and load the next pic.</h4>
+</div> -->
+<!-- <div class="images">
+
+</div> -->
+</body>
+</html>

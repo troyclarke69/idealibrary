@@ -1,0 +1,34 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%; /* 16px * 62.5 = 10px = 1rem */
+}
+
+/* h1 {
+    font-size: 100%;
+} */
+
+#blue {
+    color: blue;
+    /* em scales off of parent, ie. h1, not root */
+    font-size: 5em; 
+    /* font-size: 10px; */
+}
+
+.red {
+    color: red;
+    /* em scales off of root */
+    font-size: 2rem; 
+    /* font-size: 10px; */
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    /* space between border and content */
+    padding: 20px; 
+    /* space between elements ... the space outside border */
+    margin: 10px;
+    border: 10px solid black;
+    background-color: blueviolet;
+}

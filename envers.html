@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link href="./css/envers.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>Envers</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="grid-container">
+        <div class="header">
+           
+            <div class="brand">
+                <button onclick="openMenu()">&#9776;</button>
+                <a href="#">Index</a>
+              </div>
+
+              <div class="header-links">
+                  <a href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-sign-in fa-2x" aria-hidden="true"></i></a>
+                  <div class="dropdown">
+                    <a href="#" title="Admin"><i class="fa fa-unlock fa-2x" aria-hidden="true"></i></a>
+                    <ul class="dropdown-content">
+                      <li><a href="boot-basic.html">Boot</a></li>
+                      <li><a href="boot-nav.html">BootNav</a></li>
+                      <li><a href="sandbox.html">Sandbox</a></li>
+                      <li><a href="band-index.html">Band</a></li>
+                      <li><a href="eyes.html">Eyes</a></li>
+                      <li><a href="flags.html">Flags</a></li>
+                      <li><a href="clock.html">Clock</a></li>
+                      <li><a href="cart.html">Cart</a></li>
+                      <li><a href="2-column.html">2-Col</a></li>
+                      <li><a href="3-column.html">3-col</a></li>
+                      <li><a href="even-dist.html">Wrap</a></li>
+                      <li><a href="breakout-article.html">Article</a></li>
+                      <li><a href="calendar.html">Calendar</a></li>
+                      <li><a href="monopoly.html">Monopoly</a></li>
+                      <li><a href="drag-n-drop.html">DragNDrop</a></li>
+                    </ul>
+                  </div>
+              </div>
+        </div>
+        <aside class="sidebar">
+            <h3>Sidebar</h3>
+            <button class="sidebar-close-button" onclick="closeMenu()">
+              <i class="fa fa-arrow-left fa-1g" aria-hidden="true"></i>
+            </button>
+            <ul class="categories">
+                <h4>Links</h4>
+                <ul>
+                  <li><a href="boot-basic.html">Boot</a></li>
+                  <li><a href="boot-nav.html">BootNav</a></li>
+                  <li><a href="sandbox.html">Sandbox</a></li>
+                  <li><a href="band-index.html">Band</a></li>
+                  <li><a href="eyes.html">Eyes</a></li>
+                  <li><a href="flags.html">Flags</a></li>
+                  <li><a href="clock.html">Clock</a></li>
+                  <li><a href="cart.html">Cart</a></li>
+                  <li><a href="2-column.html">2-Col</a></li>
+                  <li><a href="3-column.html">3-col</a></li>
+                  <li><a href="even-dist.html">Wrap</a></li>
+                  <li><a href="breakout-article.html">Article</a></li>
+                  <li><a href="calendar.html">Calendar</a></li>
+                  <li><a href="monopoly.html">Monopoly</a></li>
+                  <li><a href="drag-n-drop.html">DragNDrop</a></li>
+                </ul>
+            </ul>
+        </aside>
+        <!-- <div class="sider">
+            <h4>This is the sider</h4>
+        </div> -->
+        <main class="main">
+            <section id="services">
+                <div class="container">
+                    <!-- <div class="row align-items-center services">
+                        <div class="col">
+                            <h1>Our Services</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+                        </div>
+                    </div> -->
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="card h-100 mb-3">
+                            <!-- <img src="./assets/lotto-icon.jpg" class="card-img-top" alt="…"> -->
+                            <img src="./assets/def.GIF" class="card-img-top" alt="…">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color:black">Investment App</h5>
+                                <p class="card-text" style="color:black">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">React Native, Java, REST Api</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col">
+                        <div class="card mb-3"> -->
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="card h-100 mb-3">
+                            <!-- <img src="./assets/Liquor-icon.jpg" class="card-img-top" alt="…"> -->
+                            <img src="./assets/def.GIF" class="card-img-top" alt="…">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color:black">Investment App</h5>
+                                <p class="card-text" style="color:black">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">React Native, Java, REST Api</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <!-- <div class="col">
+                        <div class="card mb-3"> -->
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="card h-100">
+                            <!-- <img src="./assets/convenience-icon.jpg" class="card-img-top" alt="…"> -->
+                            <img src="./assets/def.GIF" class="card-img-top" alt="…">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color:black">Investment App</h5>
+                                <p class="card-text" style="color:black">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">React Native, Java, REST Api</small></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col">
+                        <div class="card mb-3"> -->
+                <div class="col-sm-12 col-lg-6">
+                    <div class="card h-100">
+                            <!-- <img src="./assets/dryclean-icon.jpg" class="card-img-top" alt="…"> -->
+                            <img src="./assets/def.GIF" class="card-img-top" alt="…">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color:black">Investment App</h5>
+                                <p class="card-text" style="color:black">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">React Native, Java, REST Api</small></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="footer">
+            <h6>&copy; 2021 All right reserved.</h6>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    function openMenu() {
+        document.querySelector(".sidebar").classList.add("open")
+    }
+    function closeMenu() {
+        document.querySelector(".sidebar").classList.remove("open")
+    }
+    function func() {
+        alert('I am clicked')
+    }
+
+</script>
+</html>
