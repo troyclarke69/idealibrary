@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    text-align: center;
+    background-color: blue;
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+}
